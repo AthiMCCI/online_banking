@@ -30,6 +30,7 @@
     $result2 = $conn->query($sql2);
     $row2 = $result2->fetch_assoc();
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>

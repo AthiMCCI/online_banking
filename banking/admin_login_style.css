@@ -1,77 +1,77 @@
 @import url("fonts.css");
-
-body {
+body 
+{
     background-color: #E0E0E0;
 }
 
-h2 {
+h2
+{
     font-family: Roboto-Regular;
     color: #f44336;
 }
 
-b {
-    color: #1565C0;
-  
+b 
+{
+    color: #1565C0;  
   font-family: Roboto-Regular;
     margin-left: 10px;
 }
 
 
-input[type=text], input[type=password] {
-    font-family: Roboto-Regular;
-  
-  color: black;
+input[type=text], input[type=password]
+{
+    font-family: Roboto-Regular;  
+    color: black;
     font-size: 24px;
     width: 100%;
     margin: 8px 0;
     padding: 12px 1px;
     border: 0;
     border-bottom: 1px solid #ccc;
-   
- box-sizing: border-box;
+    box-sizing: border-box;
     background-color: transparent;
 }
 
-button {
+button 
+{
     font-family: Roboto-Regular;
-   
- background-color: #4CAF50;
+    background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
- 
-   border-radius: 3px;
+    border-radius: 3px;
 }
 
-button:hover {
+button:hover
+{
     opacity: 0.8;
 }
 
 
-.cancelbtn {
+.cancelbtn
+{
     width: auto;
     background-color: #f44336;
 }
 
 
-.flex-container-1 {
+.flex-container-1
+{
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 50%;
-    
-max-width: 600px;
+    max-width: 600px;
     height: auto;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     background-color: #FAFAFA;
- 
-   box-shadow: 5px 5px 2px #888888;
+    box-shadow: 5px 5px 2px #888888;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -83,24 +83,23 @@ max-width: 600px;
     margin: 10px;
 }
 
-.flex-container-2 {
+.flex-container-2
+{
     display: -webkit-flex;
     display: flex;
     width: 50%;
-    max-width: 600px;
- 
-   height: auto;
+    max-width: 600px; 
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     background-color: #FAFAFA;
     box-shadow: 5px 5px 2px #888888;
-   
- border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
 
 @media screen and (max-width: 1024px)
- {
+{
     .flex-container-1 {width: 100%}
     .flex-container-2 {width: 100%}
 }

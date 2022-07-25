@@ -1,21 +1,19 @@
 <?php
-    if(!isset($_SESSION)) 
-    {
-        session_start();
-    }
-    include "validate_customer.php";
-    include "connect.php";
-    include "header.php";
-    include "customer_navbar.php";
-    include "customer_sidebar.php";
-    include "session_timeout.php";
-    $email = mysqli_real_escape_string($conn, $_POST["email"]);
-    $address = mysqli_real_escape_string($conn, $_POST["address"]);
-    $cus_uname = mysqli_real_escape_string($conn, $_POST["cus_uname"]);
-    $sql0 = "UPDATE customer SET email = '$email',
-    address = '$address',
-    uname = '$cus_uname'
-    WHERE cust_id=".$_SESSION['loggedIn_cust_id'];;
+if(!isset($_SESSION)) 
+{
+    session_start();
+}
+include "validate_customer.php";
+include "connect.php";
+include "header.php";
+include "customer_navbar.php";
+include "customer_sidebar.php";
+include "session_timeout.php";
+$email = mysqli_real_escape_string($conn, $_POST["email"]);
+$address = mysqli_real_escape_string($conn, $_POST["address"]);
+$cus_uname = mysqli_real_escape_string($conn, $_POST["cus_uname"]);
+$sql0 = "UPDATE customer SET email = '$email',
+address = '$address',uname = '$cus_uname'WHERE cust_id=".$_SESSION['loggedIn_cust_id'];;
 ?>
 
 <!DOCTYPE html>

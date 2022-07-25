@@ -1,4 +1,5 @@
-.flex-container {
+.flex-container
+{
     display: -webkit-flex;
     display: flex;
     margin-left: 256px;
@@ -9,7 +10,8 @@
     flex-direction: column;
 }
 
-.flex-container-bb {
+.flex-container-bb
+{
     display: -webkit-flex;
     display: flex;
     margin: 30px;
@@ -17,11 +19,13 @@
     margin-right: auto;
 }
 
-.search-bar-wrapper {
+.search-bar-wrapper
+{
     height: 100px;
 }
 
-.search-bar-wrapper .search-bar {
+.search-bar-wrapper .search-bar
+{
     display: -webkit-flex;
     display: flex;
     margin-left: 256px;
@@ -34,7 +38,8 @@
     overflow: hidden;
 }
 
-form {
+form
+{
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
@@ -42,7 +47,8 @@ form {
     height: inherit;
 }
 
-input[type=text] {
+input[type=text]
+{
     font-family: Roboto-Regular;
     color: #212121;
     font-size: 24px;
@@ -57,7 +63,8 @@ input[type=text] {
     background-color: white;
 }
 
-button[id="search"] {
+button[id="search"]
+{
     font-family: Roboto-Regular;
     background: url(images/search.png) no-repeat;
     background-color: white;
@@ -69,7 +76,8 @@ button[id="search"] {
     border-left: 0;
 }
 
-.add-button {
+.add-button
+{
     font-family: OpenSans-Regular;
     color: #212121;
     font-size: 26px;
@@ -85,8 +93,10 @@ button[id="search"] {
     border: 3px solid #212121;
 }
 
-@media screen and (max-width: 855px) {
-    .add-button {
+@media screen and (max-width: 855px)
+{
+    .add-button
+    {
         margin-right: 0px;
         border-right: 0;
         padding: 5px 8px;
@@ -94,11 +104,13 @@ button[id="search"] {
 }
 
 /* Add a hover effect for buttons */
-button[id="search"]:hover {
+button[id="search"]:hover
+{
     background-color: #BDBDBD;
 }
 
-label {
+label 
+{
     display: block;
     float: left;
     color: #212121;
@@ -114,7 +126,8 @@ label {
     padding-left: 5px;
 }
 
-select {
+select
+{
     font-family: OpenSans-Regular;
     color: #212121;
     font-size: 24px;
@@ -130,13 +143,16 @@ select {
     width: 95px;
 }
 
-@media screen and (max-width: 855px) {
-    label {
+@media screen and (max-width: 855px)
+{
+    label
+    {
         display: none;
     }
 }
 
-.flex-item-search-bar {
+.flex-item-search-bar
+{
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
@@ -146,7 +162,8 @@ select {
 }
 
 /* Used to make the search-bar sticky */
-.search-bar-wrapper .search-bar-fixed {
+.search-bar-wrapper .search-bar-fixed
+{
     width: 100%;
     top: 53px;
     bottom: 0;
@@ -154,17 +171,20 @@ select {
     position: fixed;
 }
 
-.fi-search-bar-fixed {
+.fi-search-bar-fixed
+{
     position: relative;
     left: -128px;
 }
 
-.flex-container-label {
+.flex-container-label
+{
     width: auto;
     flex: 1 1 100px;
 }
 
-.button {
+.button 
+{
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -181,12 +201,13 @@ select {
     border-radius: 3px;
 }
 
-.button:hover {
+.button:hover
+{
     box-shadow: 5px 5px 20px #888888;
 }
-/*-------------------------------------------------------*/
 
-.flex-item {
+.flex-item
+{
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
@@ -199,38 +220,45 @@ select {
     box-shadow: 0px 2px 2px #888888;
 }
 
-.flex-item-1 {
+.flex-item-1
+{
     flex: 1;
     height: 80px;
     margin: 5px;
     background-color: transparent;
 }
 
-.flex-item-2 {
+.flex-item-2
+{
     width: 360px;
     height: auto;
     margin: 5px;
     background-color: transparent;
 }
 
-@media screen and (max-width: 855px) {
-    .flex-container, .search-bar-wrapper .search-bar {
+@media screen and (max-width: 855px)
+{
+    .flex-container, .search-bar-wrapper .search-bar
+    {
         margin-left: auto;
     }
-
-    .flex-item-2 {
+    .flex-item-2
+    {
         width: 250px;
     }
 }
 
-@media screen and (max-width: 370px) {
-    .flex-container {
+@media screen and (max-width: 370px)
+{
+    .flex-container
+    {
         margin-left: auto;
         overflow-x: scroll;
     }
 }
 
-p[id="info"] {
+p[id="info"]
+{
     text-align: center;
     font-size: 40px;
     color: #212121;
@@ -244,7 +272,8 @@ p[id="info"] {
     background-color: #F5F5F5;
 }
 
-p[id="id"] {
+p[id="id"]
+{
     text-align: center;
     font-size: 40px;
     color: #212121;
@@ -252,7 +281,8 @@ p[id="id"] {
     font-family: Roboto-Regular;
 }
 
-p[id="name"] {
+p[id="name"] 
+{
     margin-top: 0px;
     margin-left: 20px;
     font-size: 40px;
@@ -260,7 +290,8 @@ p[id="name"] {
     font-family: Roboto-Regular;
 }
 
-p[id="acno"] {
+p[id="acno"] 
+{
     margin-top: -35px;
     margin-left: 20px;
     font-size: 20px;
@@ -268,7 +299,8 @@ p[id="acno"] {
     font-family: Roboto-Regular;
 }
 
-p[id="none"] {
+p[id="none"]
+{
     margin: auto;
     font-size: 40px;
     color: #212121;
@@ -276,7 +308,8 @@ p[id="none"] {
 }
 
 /* Dropdown Button */
-.dropbtn {
+.dropbtn 
+{
     background: url("images/menu.png") no-repeat;
     margin-left: 10px;
     margin-top: 10px;
@@ -287,19 +320,19 @@ p[id="none"] {
     cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus 
+{
     opacity: 0.8;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+.dropdown
+{
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.dropdown-content
+{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -310,15 +343,17 @@ p[id="none"] {
     margin-left: 20px;
 }
 
-@media screen and (max-width: 1100px) {
-    .dropdown-content {
+@media screen and (max-width: 1100px)
+{
+    .dropdown-content
+    {
         right: 0;
         margin-right: 17px;
     }
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content a
+{
     font-family: OpenSans-Regular;
     color: black;
     padding: 12px 16px;
@@ -326,8 +361,11 @@ p[id="none"] {
     display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.dropdown-content a:hover 
+{
+    background-color: #f1f1f1
+}
+.show 
+{
+    display:block;
+}

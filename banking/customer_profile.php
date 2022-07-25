@@ -1,48 +1,45 @@
 <?php
-    if(!isset($_SESSION)) 
+if(!isset($_SESSION)) 
+{
+    session_start();
+}
+include "validate_customer.php";
+include "connect.php";
+include "header.php";
+include "customer_navbar.php";
+include "customer_sidebar.php";
+include "session_timeout.php";
+$id = $_SESSION['loggedIn_cust_id'];
+$sql0 = "SELECT * FROM customer WHERE cust_id=".$id;
+$sql1 = "SELECT * FROM passbook".$id." WHERE trans_id=(SELECT MAX(trans_id) FROM passbook".$id.")";
+$result0 = $conn->query($sql0);
+$result1 = $conn->query($sql1);
+if ($result0->num_rows > 0) 
+{
+    while($row = $result0->fetch_assoc())
     {
-        session_start();
-    }
-    include "validate_customer.php";
-    include "connect.php";
-    include "header.php";
-    include "customer_navbar.php";
-    include "customer_sidebar.php";
-    include "session_timeout.php";
-    $id = $_SESSION['loggedIn_cust_id'];
-    $sql0 = "SELECT * FROM customer WHERE cust_id=".$id;
-    $sql1 = "SELECT * FROM passbook".$id." WHERE trans_id=(SELECT MAX(trans_id) FROM passbook".$id.")";
-    $result0 = $conn->query($sql0);
-    $result1 = $conn->query($sql1);
-    
-    if ($result0->num_rows > 0) 
+        $fname = $row["first_name"];
+        $lname = $row["last_name"];
+        $gender = $row["gender"];
+        $dob = $row["dob"];
+        $aadhar = $row["aadhar_no"];
+        $email = $row["email"];
+        $phno = $row["phone_no"];
+        $address = $row["address"];
+        $branch = $row["branch"];
+        $acno = $row["account_no"];
+        $pin = $row["pin"];
+        $cus_uname = $row["uname"];
+        $cus_pwd = $row["pwd"];
+     }
+}
+if ($result1->num_rows > 0) 
+{
+    while($row = $result1->fetch_assoc()) 
     {
-        while($row = $result0->fetch_assoc())
-        {
-            $fname = $row["first_name"];
-            $lname = $row["last_name"];
-            $gender = $row["gender"];
-            $dob = $row["dob"];
-            $aadhar = $row["aadhar_no"];
-            $email = $row["email"];
-            $phno = $row["phone_no"];
-            $address = $row["address"];
-            $branch = $row["branch"];
-            $acno = $row["account_no"];
-            $pin = $row["pin"];
-            $cus_uname = $row["uname"];
-            $cus_pwd = $row["pwd"];
-        }
+        $balance = $row["balance"];
     }
-    
-    if ($result1->num_rows > 0) 
-    {
-        while($row = $result1->fetch_assoc()) 
-        {
-  
-          $balance = $row["balance"];
-        }
-    }
+}
 
 ?>
 <!DOCTYPE html>

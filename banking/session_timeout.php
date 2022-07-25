@@ -1,9 +1,8 @@
 <?php
-    if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 300)) {
-      
+if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 300))
+{
   header("location:logout_action.php?sessionExpired=true");
-        exit();
-    }
- 
-   $_SESSION['LAST_ACTIVITY'] = time(); 
+  exit();
+}
+$_SESSION['LAST_ACTIVITY'] = time(); 
 ?>
